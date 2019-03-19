@@ -85,3 +85,4 @@ git config --global core.autocrlf input
 2. 서버
    - 서버에서 git 으로 파일을 받은 후 Docker 파일 실행
    - 출처: [브랜디 랩: Docker, NodeJS, Nginx! 너로 정했다!](http://labs.brandi.co.kr/2018/05/25/kangww.html)
+   - 주의사항: 80포트가 닫혀있는 에러가 발생했었는데, 알고보니 아파치가 실행중이었음. 종료시키고 다시 docker 실행시켜주면 됨
