@@ -1,22 +1,22 @@
 {
-  "name": "portfolio_dayarchive",
-  "version": "1.0.0",
-  "description": "2019.03.07",
-  "main": "app.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/Teperi/portfolio_dayArchive.git"
-  },
-  "author": "",
-  "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/Teperi/portfolio_dayArchive/issues"
-  },
-  "homepage": "https://github.com/Teperi/portfolio_dayArchive#readme",
-  "dependencies": {
-    "express": "^4.16.4"
-  }
+    "name": "portfolio_dayarchive",
+    "version": "0.0.1",
+    "description": "2019.03.07",
+    "main": "app.js",
+    "scripts": {
+        "test": "echo \"Error: no test specified\" && exit 1"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/Teperi/portfolio_dayArchive.git"
+    },
+    "author": "",
+    "license": "ISC",
+    "bugs": {
+        "url": "https://github.com/Teperi/portfolio_dayArchive/issues"
+    },
+    "homepage": "https://github.com/Teperi/portfolio_dayArchive#readme",
+    "dependencies": {
+        "express": "^4.16.4"
+    }
 }
