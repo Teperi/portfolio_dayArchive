@@ -1,6 +1,7 @@
 # Ubuntu 설치 이후 과정 기록
 
 2019.03.19: 작성 시작
+2019.03.20: DynamoDB 작성 추가
 
 ## 기본 작업
 
@@ -34,6 +35,7 @@ sudo docker run hello-world
 ## git 설치
 
 ```bash
+# 만약 설치되어있다면 굳이 할 필요 없음
 sudo apt-get install git-all
 
 # git 설정
@@ -85,4 +87,15 @@ git config --global core.autocrlf input
 2. 서버
    - 서버에서 git 으로 파일을 받은 후 Docker 파일 실행
    - 출처: [브랜디 랩: Docker, NodeJS, Nginx! 너로 정했다!](http://labs.brandi.co.kr/2018/05/25/kangww.html)
-   - 주의사항: 80포트가 닫혀있는 에러가 발생했었는데, 알고보니 아파치가 실행중이었음. 종료시키고 다시 docker 실행시켜주면 됨
+   - 주의사항: 80포트가 닫혀있는 에러가 발생했었는데, 알고보니 아파치가 실행중이었음. 아파치를 stop 종료시키고 다시 docker 실행시켜주면 됨
+
+## DynamoDB 연결
+
+1. 개발자 컴퓨터에 DynamoDB 사용을 위해 연결
+   - 출처: [AWS 자습서: Node.js와 DynamoDB](https://docs.aws.amazon.com/ko_kr/amazondynamodb/latest/developerguide/GettingStarted.NodeJs.html) 기준 따라해보기
+   - 설치작업 진행
+     - [컴퓨터에서 DynamoDB(다운로드 가능 버전)](https://docs.aws.amazon.com/ko_kr/amazondynamodb/latest/developerguide/DynamoDBLocal.DownloadingAndRunning.html)
+     - [Microsoft Windows에 AWS Command Line Interface 설치](https://docs.aws.amazon.com/ko_kr/cli/latest/userguide/install-windows.html)
+     - [IAM 계정 생성](https://docs.aws.amazon.com/ko_kr/IAM/latest/UserGuide/getting-started_create-admin-group.html)
+     - [AWS CLI 구성](https://docs.aws.amazon.com/ko_kr/cli/latest/userguide/cli-chap-configure.html)
+   - 오프라인 작업 예제 진행
