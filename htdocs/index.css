@@ -1,4 +1,76 @@
-/* body {
-  background: url("Images/undraw_working_late_pukg.png") no-repeat center center fixed;
-  background-size: cover;
-} */
+@import url("https://fonts.googleapis.com/css?family=Nanum+Pen+Script");
+@import url("https://fonts.googleapis.com/css?family=Lobster");
+
+.relate {
+  height: 80vh;
+  position: relative;
+}
+
+.indexSection {
+  width: 80vw;
+  /* 중앙정렬 배치 용도 */
+  position: absolute;
+  top: 57%;
+  left: 50%;
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+}
+
+.titleDiv {
+  position: relative;
+  height: 350px;
+}
+
+.imgDiv {
+  position: relative;
+  height: 400px;
+}
+
+.titleImg {
+  object-fit: contain;
+  /* 중앙정렬 배치 용도 */
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+}
+
+.titleText {
+  font-family: "Lobster", cursive;
+  /* 중앙정렬 배치 용도 */
+  position: absolute;
+  top: 30%;
+  left: 50%;
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+}
+
+.titleText {
+  font-family: "Lobster", cursive;
+  /* 중앙정렬 배치 용도 */
+  position: absolute;
+  top: 10%;
+  left: 50%;
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+}
+.subtitleText {
+  font-family: "Nanum Pen Script", cursive;
+  /* 중앙정렬 배치 용도 */
+  position: absolute;
+  top: 40%;
+  left: 50%;
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+}
+
+.buttonGroup {
+  width: 300px;
+  /* 중앙정렬 배치 용도 */
+  position: absolute;
+  top: 85%;
+  left: 50%;
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+}
