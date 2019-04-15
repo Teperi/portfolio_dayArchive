@@ -1,2 +1,0 @@
-// materializecss start
-M.AutoInit();
