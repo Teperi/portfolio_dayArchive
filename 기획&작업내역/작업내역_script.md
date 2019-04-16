@@ -5,6 +5,8 @@
 ## 2019.04.15
 
 - Local(개발용 컴퓨터) 에 환경 설정
+- day-archive
+  - dayArchive 일때 대문자 A때문에 사용이 불가능함
 
 ![Local PC Script](Images/20190415_script_localPC.png)
 
