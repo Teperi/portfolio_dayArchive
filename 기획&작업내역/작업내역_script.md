@@ -2,6 +2,60 @@
 
 - 작업 내역 중 Script 부분 모음
 
+## 2019.04.16
+
+- Material-UI 설치
+
+```bash
+Teperi@DESKTOP-EAT2G59 MINGW64 ~/Github/portfolio_dayArchive/day-archive (master)
+$ yarn add @material-ui/core
+yarn add v1.15.2
+
+info fsevents@1.2.4: The platform "win32" is incompatible with this module.
+info "fsevents@1.2.4" is an optional dependency and failed compatibility check. Excluding it from installation.
+info fsevents@1.2.7: The platform "win32" is incompatible with this module.
+info "fsevents@1.2.7" is an optional dependency and failed compatibility check. Excluding it from installation.
+[3/4] Linking dependencies...
+[4/4] Building fresh packages...
+success Saved lockfile.
+success Saved 31 new dependencies.
+info Direct dependencies
+└─ @material-ui/core@3.9.3
+info All dependencies
+├─ @material-ui/core@3.9.3
+├─ @material-ui/system@3.0.0-alpha.2
+├─ @material-ui/utils@3.0.0-alpha.3
+├─ @types/jss@9.5.8
+├─ @types/prop-types@15.7.0
+├─ @types/react-transition-group@2.9.0
+├─ @types/react@16.8.13
+├─ brcast@3.0.1
+├─ change-emitter@0.1.6
+├─ classnames@2.2.6
+├─ css-vendor@0.3.8
+├─ csstype@2.6.3
+├─ debounce@1.2.0
+├─ dom-helpers@3.4.0
+├─ hyphenate-style-name@1.0.3
+├─ indefinite-observable@1.0.2
+├─ is-in-browser@1.1.3
+├─ jss-camel-case@6.1.0
+├─ jss-default-unit@8.0.2
+├─ jss-global@3.0.0
+├─ jss-nested@6.0.1
+├─ jss-props-sort@6.0.0
+├─ jss-vendor-prefixer@7.0.0
+├─ jss@9.8.7
+├─ normalize-scroll-left@0.1.2
+├─ popper.js@1.15.0
+├─ react-event-listener@0.6.6
+├─ react-lifecycles-compat@3.0.4
+├─ react-transition-group@2.9.0
+├─ recompose@0.30.0
+└─ symbol-observable@1.2.0
+Done in 9.61s.
+```
+
 ## 2019.04.15
 
 - Local(개발용 컴퓨터) 에 환경 설정
