@@ -2,6 +2,26 @@
 
 - 작업 내역 중 Script 부분 모음
 
+## 2019.04.17
+
+- Material-UI SVG icon 설치
+
+```bash
+Teperi@DESKTOP-EAT2G59 MINGW64 ~/Github/portfolio_dayArchive/day-archive (mainPage)
+$ yarn add @material-ui/icons
+yarn add v1.15.2
+
+[4/4] Building fresh packages...
+
+success Saved lockfile.
+success Saved 1 new dependency.
+info Direct dependencies
+└─ @material-ui/icons@3.0.2
+info All dependencies
+└─ @material-ui/icons@3.0.2
+Done in 23.18s.
+```
+
 ## 2019.04.16
 
 - Material-UI 설치
