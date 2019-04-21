@@ -1,6 +1,6 @@
 import React from 'react';
 import { Route, Switch } from 'react-router-dom';
-import { Main, Cashbook, Diary, NoPage, MediaControlCard } from '../pages';
+import { Main, Cashbook, Diary, NoPage, MediaControlCard, ComplexGrid } from '../pages';
 
 const App = () => {
   return (
@@ -10,6 +10,7 @@ const App = () => {
         <Route path='/diary' component={Diary} />
         <Route path='/cashbook' component={Cashbook} />
         <Route path='/media' component={MediaControlCard} />
+        <Route path='/ComplexGrid' component={ComplexGrid} />
         <Route component={NoPage} />
       </Switch>
     </div>
