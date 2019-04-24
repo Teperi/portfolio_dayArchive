@@ -4,7 +4,10 @@ import { withStyles } from '@material-ui/core/styles';
 import Paper from '@material-ui/core/Paper';
 import Grid from '@material-ui/core/Grid';
 import Typography from '@material-ui/core/Typography';
+import Button from '@material-ui/core/Button';
 import withRoot from '../withRoot';
+
+import './Main.css';
 
 const styles = theme => ({
   root: {
@@ -16,7 +19,8 @@ const styles = theme => ({
     flexGrow: 1,
     padding: theme.spacing.unit * 2,
     margin: 'auto',
-    maxWidth: 1500
+    maxWidth: 1600,
+    textAlign: 'center'
   },
   img: {
     margin: 'auto',
@@ -47,10 +51,10 @@ const Main = props => {
               </Grid>
               <Grid item xs>
                 <Typography gutterBottom>당신의 하루를 기록하세요.</Typography>
-                <Typography style={{ cursor: 'pointer' }}>Remove</Typography>
               </Grid>
               <Grid item>
-                <p> 버튼자리</p>
+                <Button>로그인</Button>
+                <Button>회원가입</Button>
               </Grid>
             </Grid>
           </Grid>
