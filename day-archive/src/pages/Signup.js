@@ -5,6 +5,10 @@ import withRoot from '../withRoot';
 import Paper from '@material-ui/core/Paper';
 import Typo from '@material-ui/core/Typography';
 import TextField from '@material-ui/core/TextField';
+import IconButton from '@material-ui/core/IconButton';
+import InputAdornment from '@material-ui/core/InputAdornment';
+import Visibility from '@material-ui/icons/Visibility';
+import VisibilityOff from '@material-ui/icons/VisibilityOff';
 
 const styles = theme => ({
   root: {
@@ -17,24 +21,32 @@ const styles = theme => ({
     flexGrow: 1,
     padding: theme.spacing.unit * 2,
     margin: 'auto',
-    maxWidth: 800,
+    maxWidth: 500,
     textAlign: 'center'
   },
   textField: {
-    marginLeft: theme.spacing.unit,
-    marginRight: theme.spacing.unit
+    flexBasis: 200
   }
 });
 
 class Signup extends React.Component {
   state = {
-    id: ''
+    id: '',
+    password: '',
+    passwordconfirm: '',
+    idValidate: false,
+    showPassword: false
   };
 
-  handleChange = id => event => {
+  handleChange = (id, password) => event => {
     this.setState({
-      [id]: event.target.value
+      [id]: event.target.value,
+      [password]: event.target.value
     });
+  };
+
+  handleClickShowPassword = () => {
+    this.setState(state => ({ showPassword: !state.showPassword }));
   };
 
   render() {
@@ -42,9 +54,15 @@ class Signup extends React.Component {
     return (
       <div className={classes.root}>
         <Paper className={classes.paper}>
+          <Typo component='h4' variant='h4'>
+            회원 가입
+          </Typo>
           <TextField
-            id='outlined-name'
-            label='id'
+            fullWidth
+            required
+            error={this.state.idValidate}
+            id='outlined-id'
+            label='ID'
             className={classes.textField}
             value={this.state.id}
             onChange={this.handleChange('id')}
@@ -52,17 +70,49 @@ class Signup extends React.Component {
             variant='outlined'
           />
           <TextField
-            id='outlined-name'
-            label='id'
-            className={classes.textField}
-            value={this.state.id}
-            onChange={this.handleChange('id')}
-            margin='normal'
-            variant='outlined'
-            placeholder='id를 입력하세요'
             fullWidth
-            InputLabelProps={{
-              shrink: true
+            id='outlined-adornment-password'
+            className={classes.textField}
+            variant='outlined'
+            margin='normal'
+            type={this.state.showPassword ? 'text' : 'password'}
+            label='Password'
+            value={this.state.password}
+            onChange={this.handleChange('password')}
+            InputProps={{
+              endAdornment: (
+                <InputAdornment position='end'>
+                  <IconButton
+                    aria-label='Toggle password visibility'
+                    onClick={this.handleClickShowPassword}
+                  >
+                    {this.state.showPassword ? <VisibilityOff /> : <Visibility />}
+                  </IconButton>
+                </InputAdornment>
+              )
+            }}
+          />
+          <TextField
+            fullWidth
+            id='outlined-adornment-password'
+            className={classes.textField}
+            variant='outlined'
+            margin='normal'
+            type={this.state.showPassword ? 'text' : 'password'}
+            label='Password'
+            value={this.state.passwordconfirm}
+            onChange={this.handleChange('password')}
+            InputProps={{
+              endAdornment: (
+                <InputAdornment position='end'>
+                  <IconButton
+                    aria-label='Toggle password visibility'
+                    onClick={this.handleClickShowPassword}
+                  >
+                    {this.state.showPassword ? <VisibilityOff /> : <Visibility />}
+                  </IconButton>
+                </InputAdornment>
+              )
             }}
           />
         </Paper>
