@@ -5,6 +5,7 @@ import Paper from '@material-ui/core/Paper';
 import Grid from '@material-ui/core/Grid';
 import Typography from '@material-ui/core/Typography';
 import Button from '@material-ui/core/Button';
+import { Link } from 'react-router-dom';
 import withRoot from '../withRoot';
 
 import './Main.css';
@@ -53,8 +54,12 @@ const Main = props => {
                 <Typography gutterBottom>당신의 하루를 기록하세요.</Typography>
               </Grid>
               <Grid item>
-                <Button>로그인</Button>
-                <Button>회원가입</Button>
+                <Button component={Link} to='/signin'>
+                  로그인
+                </Button>
+                <Button component={Link} to='/signup'>
+                  회원가입
+                </Button>
               </Grid>
             </Grid>
           </Grid>
